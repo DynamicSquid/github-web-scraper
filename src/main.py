@@ -8,7 +8,7 @@ def scrape(web_tab, tab):
     print('user not found')
     sys.exit(1)
 
-  file = open('data/' + tab + '.txt', 'w')
+  file = open('../data/' + tab + '.txt', 'w')
   file.write(page.content.decode('utf-8'))
   file.close()
 
