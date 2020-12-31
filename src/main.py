@@ -9,11 +9,14 @@ if website.status_code == 404:
 	print('user not found')
 	sys.exit(1)
 
-def extract_data(_page, tag, endTag, inc):
-	website = requests.get('https://github.com/' + name + '/?tab=' + _page)
+def extract_data(tab, tag, endTag, inc):
+	website = requests.get('https://github.com/' + name + '/?tab=' + tab)
 	page = website.content.decode('utf-8')
 
 	tag_index = page.find(tag)
+	if tag_index == -1:
+		print('none :(')
+
 	while tag_index != -1:
 		endIndex = page.find(endTag, tag_index + inc)
 		print(' - ' + page[tag_index + inc : endIndex])
