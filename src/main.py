@@ -1,7 +1,7 @@
 import sys
 import requests
 
-name = 'DynamicSquid'#input('username: ')
+name = input('username: ')
 
 website = requests.get('https://github.com/' + name)
 

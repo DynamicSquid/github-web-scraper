@@ -11,4 +11,4 @@ A web scraper that scraps your profile. Just enter your username and it'll list 
 
 It uses Python for the scraping and Java for the parsing, with Bash to provide a smooth interaction between the two.
 
-Try it out [here](https://github-web-scraper.dynamicsquid.repl.run/)!
+Try it out [here](github-web-scraper.dynamicsquid.repl.run)!
